@@ -7,5 +7,10 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <fragment
+        android:tag="아무말"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        class="com.nepplus.fragmentbasic_20220218.fragments.MyFirstFragment"/>
 
 </LinearLayout>
