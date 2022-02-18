@@ -13,4 +13,10 @@
         android:layout_height="200dp"
         class="com.nepplus.fragmentbasic_20220218.fragments.MyFirstFragment"/>
 
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        class="com.nepplus.fragmentbasic_20220218.fragments.SecondFragment"
+        android:tag="아무말2"/>
+
 </LinearLayout>
