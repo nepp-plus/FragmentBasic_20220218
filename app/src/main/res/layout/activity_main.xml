@@ -7,24 +7,40 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <fragment
-        android:tag="아무말"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        class="com.nepplus.fragmentbasic_20220218.fragments.MyFirstFragment"/>
+        android:layout_height="match_parent">
 
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        class="com.nepplus.fragmentbasic_20220218.fragments.SecondFragment"
-        android:tag="아무말2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-<!--  ThirdFragment 만들어서 배치. 세로 300dp  -->
+            <fragment
+                android:tag="아무말"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                class="com.nepplus.fragmentbasic_20220218.fragments.MyFirstFragment"/>
 
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        class="com.nepplus.fragmentbasic_20220218.fragments.ThirdFragment"
-        android:tag="thirdFrag" />
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                class="com.nepplus.fragmentbasic_20220218.fragments.SecondFragment"
+                android:tag="아무말2"/>
+
+            <!--  ThirdFragment 만들어서 배치. 세로 300dp  -->
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                class="com.nepplus.fragmentbasic_20220218.fragments.ThirdFragment"
+                android:tag="thirdFrag" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
 
 </LinearLayout>
